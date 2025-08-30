@@ -2,19 +2,22 @@
 
 Một ví dụ demo service **Calculator** sử dụng **Go + gRPC + Protocol Buffers**.
 
+---
+
 ## 📂 Cấu trúc thư mục
 
+```bash
 calculator/
-├── calculatorrpc/ # File .proto và code sinh ra
-│ ├── calculator.proto
-│ ├── calculator.pb.go
-│ └── calculator_grpc.pb.go
-├── server/ # gRPC server
-│ └── main.go
-├── client/ # gRPC client
-│ └── main.go
-├── Makefile # Script build/run
-└── README.md # Tài liệu project
+├── calculatorrpc/          # File .proto và code sinh ra
+│   ├── calculator.proto
+│   ├── calculator.pb.go
+│   └── calculator_grpc.pb.go
+├── server/                 # gRPC server
+│   └── main.go
+├── client/                 # gRPC client
+│   └── main.go
+├── Makefile                # Script build/run
+└── README.md               # Tài liệu project
 
 
 ## 🚀 Cài đặt
