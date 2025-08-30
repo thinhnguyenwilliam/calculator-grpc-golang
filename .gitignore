@@ -1,0 +1,35 @@
+# Binaries
+/bin/
+/*.exe
+/*.exe~
+/*.dll
+/*.so
+/*.dylib
+
+# Test binaries
+/*.test
+
+# Output of the go coverage tool
+*.out
+
+# IDE & editor config
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Go modules
+vendor/
+
+# Proto build cache
+*.pb.go
+
+# If you want to keep generated .pb.go, remove this line ↑
+# và commit code sinh ra từ protoc (nhiều team hay làm vậy)

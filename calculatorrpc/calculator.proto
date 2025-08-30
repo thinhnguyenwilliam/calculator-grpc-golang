@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package calculator;
+
+option go_package = "calculatorrpc/";
+
+// Service định nghĩa các phép tính
+service CalculatorService {
+  rpc Add (AddRequest) returns (AddResponse);
+  rpc Subtract (SubtractRequest) returns (SubtractResponse);
+}
+
+// Request/Response cho Add
+message AddRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+message AddResponse {
+  int32 result = 1;
+}
+
+// Request/Response cho Subtract
+message SubtractRequest {
+  int32 a = 1;
+  int32 b = 2;
+}
+message SubtractResponse {
+  int32 result = 1;
+}
